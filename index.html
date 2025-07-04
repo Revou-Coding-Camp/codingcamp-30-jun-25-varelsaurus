@@ -31,12 +31,12 @@
     <!-- welcome section end -->
 
     <!-- Headquarter Section Start-->
-    <section class=" flex-row">
-        <h1 class="font-bold ml-10 mt-5">Our Headquarter</h1>
+    <section class="flex-row">
+        <h1 class="font-bold ml-10 mt-5 text-xl">Our Headquarter</h1>
         <div class="flex flex-row justify-center space-x-20 mt-20">
             <div class="flex flex-col items-center">
                 <div class="w-24 h-24 rounded-full border-2 border-gray-400"></div>
-                <p class="mt-2 ">Jakarta</p>
+                <p class="mt-2">Jakarta</p>
             </div>
             <div class="flex items-center flex-col">
                 <div class="w-24 h-24 border-2 rounded-full border-gray-400"></div>
@@ -52,36 +52,46 @@
     <!-- Headquarter Section End-->
 
     <!-- Form Message Us -->
-    <section>
-        <div>
-            <form>
-                <div>
+    <section class="flex justify-between items-start p-10">
+        <div class="w-1/2">
+            <h1 class="font-bold text-xl mb-5">Message Us</h1>
+            <form id="contactForm">
+                <div class="mb-5">
                     <!-- Form Nama -->
-                    <label for="input-nama">Nama:</label>
-                    <input type="text" name="namauser" id="input-nama" class="border rounded-sm">
+                    <label for="input-nama" class="block text-gray-700">Nama:</label>
+                    <input type="text" name="namauser" id="input-nama" class="border rounded-sm w-full p-2">
                 </div>
-                <div>
+                <div class="mb-5">
                     <!-- Form Tanggal -->
-                    <label for="input-tanggal">Tanggal Lahir:</label>
-                    <input type="date" name="tanggaluser" id="input-tanggal" class="border rounded-sm">
+                    <label for="input-tanggal" class="block text-gray-700">Tanggal Lahir:</label>
+                    <input type="date" name="tanggaluser" id="input-tanggal" class="border rounded-sm w-full p-2">
                 </div>
-                <div>
+                <div class="mb-5">
                     <!-- Form Jenis Kelamin -->
-                    <label for="input-jenis">Jenis Kelamin:</label>
-                    <input type="radio" name="jeniskelamin" id="laki-laki" class="border rounded-sm">
-                    <label for="laki-laki">Laki-Laki</label>
-                    <input type="radio" name="jeniskelamin" id="perempuan" class="border rounded-sm">
+                    <label class="block text-gray-700">Jenis Kelamin:</label>
+                    <input type="radio" name="jeniskelamin" id="laki-laki" value="Laki-Laki" class="mr-2">
+                    <label for="laki-laki" class="mr-4">Laki-Laki</label>
+                    <input type="radio" name="jeniskelamin" id="perempuan" value="Perempuan" class="mr-2">
                     <label for="perempuan">Perempuan</label>
                 </div>
-                <div>
+                <div class="mb-5">
                     <!-- Form Input Pesan -->
-                    <label for="input-pesan">Pesan:</label>
-                    <input type="text" name="pesanuser" id="input-pesan" class="border rounded-sm">
+                    <label for="input-pesan" class="block text-gray-700">Pesan:</label>
+                    <textarea name="pesanuser" id="input-pesan" class="border rounded-sm w-full p-2 h-20"></textarea> <!-- Ganti input menjadi textarea -->
+                </div>
+                <div class="py-4">
+                    <button type="submit" class="border rounded-sm px-5 py-1 bg-slate-300 hover:bg-slate-500">Submit</button>
                 </div>
             </form>
         </div>
+        <aside class="w-1/3  p-4 ml-5 border">
+            <p class="font-bold">Current Time: Fri, 04 Jul 2025 18:00 WIB</p>
+            <p><span class="font-bold">Nama:</span> [Nama]</p>
+            <p><span class="font-bold">Tanggal Lahir:</span> [Tanggal]</p>
+            <p><span class="font-bold">Jenis Kelamin:</span> [Jenis Kelamin]</p>
+            <p><span class="font-bold">Pesan:</span> [Pesan]</p>
+        </aside>
     </section>
-
 
     <script src="js/script.js"></script>
 </body>
