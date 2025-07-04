@@ -54,15 +54,30 @@
     <!-- Form Message Us -->
     <section>
         <div>
-            <form class="flex flex-col">
-                <label for="name-input"> Name:</label>
-                <input type="text" id="name-input" name="name" class="border">
-                <label for="name-input"> Tanggal Lahir:</label>
-                <input type="date" id="name-input" name="name" class="border">
-                <label for="name-input"> Jenis Kelamin:</label>
-                <input type="radio" id="name-input" name="name" class="border">
-                <label for="name-input"> Pesan:</label>
-                <input type="text" id="name-input" name="name" class="border">
+            <form>
+                <div>
+                    <!-- Form Nama -->
+                    <label for="input-nama">Nama:</label>
+                    <input type="text" name="namauser" id="input-nama" class="border rounded-sm">
+                </div>
+                <div>
+                    <!-- Form Tanggal -->
+                    <label for="input-tanggal">Tanggal Lahir:</label>
+                    <input type="date" name="tanggaluser" id="input-tanggal" class="border rounded-sm">
+                </div>
+                <div>
+                    <!-- Form Jenis Kelamin -->
+                    <label for="input-jenis">Jenis Kelamin:</label>
+                    <input type="radio" name="jeniskelamin" id="laki-laki" class="border rounded-sm">
+                    <label for="laki-laki">Laki-Laki</label>
+                    <input type="radio" name="jeniskelamin" id="perempuan" class="border rounded-sm">
+                    <label for="perempuan">Perempuan</label>
+                </div>
+                <div>
+                    <!-- Form Input Pesan -->
+                    <label for="input-pesan">Pesan:</label>
+                    <input type="text" name="pesanuser" id="input-pesan" class="border rounded-sm">
+                </div>
             </form>
         </div>
     </section>
