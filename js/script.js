@@ -6,7 +6,7 @@ gambarawal.onload = function() {
     sesiwelcome.style.visibility = 'visible';
 } 
 
-window.onload = function() {
-    let namauser = prompt('Siapa nama kamu?');
-    salam.textContent = `Hi ${namauser}, Welcome To Website`;
-}
+// window.onload = function() {
+//     let namauser = prompt('Siapa nama kamu?');
+//     salam.textContent = `Hi ${namauser}, Welcome To Website`;
+// }
